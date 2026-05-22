@@ -1,0 +1,89 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AgendaFácil — Esqueci minha senha</title>
+<link rel="stylesheet" href="{% static 'AgendaFacilapp/senha.css' %}">
+</head>
+<body>
+
+<header>
+  <div class="logo">AgendaFácil</div>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+  </nav>
+  <button class="btn-solicitar">Solicitar Organização</button>
+</header>
+
+<div class="page-content">
+
+  <div class="card-wrapper">
+    <span class="card-state-label">Estado 1 — Formulário</span>
+    <div class="card">
+
+      <a href="#" class="back-link">← Voltar ao login</a>
+
+      <div class="icon-area">
+        <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+          <rect x="6" y="18" width="60" height="40" rx="4" stroke="#0D9488" stroke-width="3" fill="none"/>
+          <polyline points="6,18 36,42 66,18" stroke="#0D9488" stroke-width="3" fill="none"/>
+          <rect x="42" y="40" width="22" height="16" rx="3" fill="white" stroke="#0D9488" stroke-width="2.5"/>
+          <path d="M47 40 v-4 a6 6 0 0 1 12 0 v4" stroke="#0D9488" stroke-width="2.5" fill="none"/>
+          <circle cx="53" cy="48" r="2" fill="#0D9488"/>
+        </svg>
+      </div>
+
+      <p class="card-title">Esqueceu sua senha?</p>
+      <p class="card-subtitle">Digite seu e-mail e enviaremos um link para você criar uma nova senha.</p>
+
+      <div class="field">
+        <label>E-mail cadastrado</label>
+        <div class="input-wrapper">
+          <span class="input-icon">✉</span>
+          <input type="email" placeholder="joao@email.com">
+        </div>
+      </div>
+
+      <button class="btn-primary">Enviar link de recuperação</button>
+      <p class="link-expires">O link expira em 30 minutos</p>
+
+      <div class="or-divider">
+        <hr>
+        <span>ou</span>
+        <hr>
+      </div>
+
+      <button class="btn-secondary">Lembrei minha senha · Entrar</button>
+
+    </div>
+  </div>
+
+  <div class="card-wrapper">
+    <span class="card-state-label">Estado 2 — Sucesso</span>
+    <div class="card">
+
+      <div class="icon-area" style="margin-top: 36px;">
+        <svg class="success-icon" viewBox="0 0 72 72" fill="none">
+          <circle cx="36" cy="36" r="36" fill="#0D9488"/>
+          <polyline points="20,36 30,46 52,26" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+
+      <p class="card-title" style="margin-top: 8px;">E-mail enviado!</p>
+      <p class="card-subtitle">Enviamos um link para joao@email.com. Verifique sua caixa de entrada.</p>
+
+      <button class="btn-primary">Abrir meu e-mail</button>
+
+      <p class="resend-text">Não recebeu? <a href="#">Reenviar link</a></p>
+      <p class="link-expires">O link expira em 30 minutos</p>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

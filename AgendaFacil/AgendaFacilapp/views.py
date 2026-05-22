@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
-from django.shortcuts import render
+def senha(request):
+    return render(request, 'AgendaFacilapp/senha.html')
 
-def index(request):
-    return render(request, 'AgendaFacilapp/index.html')
+def cadastro(request):
+    return render(request, 'AgendaFacilapp/cadastro.html')
