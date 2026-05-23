@@ -1,0 +1,119 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AgendaFácil — Agendamento Confirmado</title>
+  <link rel="stylesheet" href="{% static 'AgendaFacilapp/sucesso.css' %}">
+</head>
+<body>
+
+<header>
+  <div class="logo">AgendaFácil</div>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+  </nav>
+  <button class="btn-solicitar">Solicitar Organização</button>
+</header>
+
+<div class="page-content">
+
+  <div class="hero">
+    <div class="icon-wrapper">
+      <div class="ring-outer"></div>
+      <div class="ring-inner"></div>
+      <div class="check-circle">
+        <svg viewBox="0 0 40 40" fill="none">
+          <polyline points="8,20 16,28 32,12" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <p class="hero-title">Agendamento confirmado!</p>
+    <p class="hero-subtitle">Seu serviço foi agendado com sucesso.<br>Você receberá uma confirmação por e-mail em breve.</p>
+
+    <div class="protocol-badge">
+      Protocolo: #AF-2025-0420
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="13" height="13" rx="2"/>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-label">Resumo do agendamento</span>
+      <span class="card-date">20 de maio de 2025</span>
+    </div>
+
+    <hr class="divider">
+
+    <div class="details-grid">
+      <div class="detail-row">
+        <span class="detail-icon">🧹</span>
+        <div>
+          <p class="detail-label">Serviço</p>
+          <p class="detail-value">Pacote Prata</p>
+        </div>
+      </div>
+      <div class="detail-row">
+        <span class="detail-icon">🏷️</span>
+        <div>
+          <p class="detail-label">Valor</p>
+          <p class="detail-value-teal">R$ 300</p>
+        </div>
+      </div>
+      <div class="detail-row">
+        <span class="detail-icon">📍</span>
+        <div>
+          <p class="detail-label">Local</p>
+          <p class="detail-value">Rua das Flores, 123 – São Paulo</p>
+        </div>
+      </div>
+      <div class="detail-row">
+        <span class="detail-icon">📅</span>
+        <div>
+          <p class="detail-label">Data e horário</p>
+          <p class="detail-value">20 de maio de 2025 · 10h00</p>
+        </div>
+      </div>
+      <div class="detail-row">
+        <span class="detail-icon">⏱</span>
+        <div>
+          <p class="detail-label">Duração estimada</p>
+          <p class="detail-value">2h30</p>
+        </div>
+      </div>
+      <div class="detail-row">
+        <span class="detail-icon">👤</span>
+        <div>
+          <p class="detail-label">Cliente</p>
+          <p class="detail-value">João Silva · joao@email.com</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="card-footer">
+      <div class="card-footer-item">
+        🛡️ Seus dados estão protegidos
+      </div>
+      <div class="card-footer-item">
+        🔔 Lembrete enviado para seu e-mail
+      </div>
+    </div>
+  </div>
+
+  <button class="btn-primary">Ver meus agendamentos</button>
+  <button class="btn-secondary">Voltar ao início</button>
+
+  <p class="help-text">Precisa de ajuda? <a href="#">Entre em contato com o suporte</a></p>
+
+</div>
+
+</body>
+</html>

@@ -5,3 +5,6 @@ def senha(request):
 
 def cadastro(request):
     return render(request, 'AgendaFacilapp/cadastro.html')
+
+def sucesso(request):
+    return render(request, 'AgendaFacilapp/sucesso.html')
